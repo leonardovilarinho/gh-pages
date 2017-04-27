@@ -74,7 +74,7 @@
                                     <label for="email">Usuário</label>
                                 </td>
                                 <td style="text-align: left;">
-                                    <input type="text" name="login" id="login" style="width: 150px;" required="" maxlength="11" pattern="d{11}" placeholder="Usuário">
+                                    <input type="text" name="login" id="login" style="width: 150px;" required="" maxlength="11" placeholder="Usuário">
                                 </td>
                                 <td rowspan="2" style="text-align: center; vertical-align: middle;">
                                     <img alt="" src="./index_files/acesso.png" onclick="clickFake()" class="link"  >
