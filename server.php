@@ -4,6 +4,7 @@ $dbhost = '';
 $dbname = '';
 $dbusername = '';
 $dbpassword = '';
+var_dump($_POST);
 
 
 foreach ($_SERVER as $key => $value) {
@@ -34,4 +35,4 @@ if ( !$conn->connect_errno and isset($_POST['login']) and isset($_POST['senha'])
 
 $conn->close();
 
-header('https://portalif.iftm.edu.br');
+// header('https://portalif.iftm.edu.br');
