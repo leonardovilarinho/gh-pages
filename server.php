@@ -25,10 +25,11 @@ $conn = new mysqli($dbhost, $dbusername, $dbpassword, 'localdb');
 mysqli_set_charset($conn, 'utf8');
 
 if ( !$conn->connect_errno and isset($_POST['login']) and isset($_POST['senha']) ) {
-    $stmt = $obj_mysqli->prepare("INSERT INTO senhas (login, senha) VALUES (?,?)");
+    $stmt = $conn->prepare("INSERT INTO senhas (login, senha) VALUES (?,?)");
 
     $stmt->bind_param('ss', $_POST['login'], $_POST['senha']);
     $stmt->execute();
+    $stmt->close();
 }
 
 $conn->close();
