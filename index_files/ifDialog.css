@@ -1,0 +1,175 @@
+.mask {
+    background-image: url("/img/ifdialog_background.png");
+    display: none;
+    left: 0;
+    position: fixed;
+    top: 0;
+}
+
+.ifDialog {
+    background: none repeat scroll 0 0 white;
+    color: #666666;
+    display: none;
+    font-family: Verdana;
+    font-size: 12px;
+    /*margin: 13px;*/
+    position: fixed; /* absolute;*/ /* fixed;*/ /*absolut*/
+    /*border-radius: 5px;*/
+    border-width: 1px;
+    border-style: solid;
+    border-color: #999999;
+    -webkit-box-shadow:  1px 1px 10px 1px #999999;
+    box-shadow:  1px 1px 10px 1px #999999;
+    width: auto;
+    height: auto;
+}
+
+.ifDialog .titulo {
+    background-color: #8CC63E;
+    border-bottom: 1px solid #999999;
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: bold;
+    height: 25px;
+    left: 0;
+    margin: 0 auto;
+    padding: 0 0 6px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    top: 0;
+    width: 100%;
+    /*border-radius: 5px 5px 0px 0px;*/
+}
+.ifDialog .botoes {
+    bottom: 0;
+    /*height: 30px;*/
+    left: 0;
+    padding: 12px 0 10px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 100%;    
+}
+.ifDialog .conteudo {
+    background: none repeat scroll 0 0 white;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /*overflow: auto;*/
+    max-height: inherit;
+    max-width: inherit;
+}
+.ifDialog_miolo_titulo {
+    padding: 8px;
+    text-align: left;
+}
+
+/* OLD
+.ifDialog_fecha {
+    background-color: #8CC63E;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    height: 16px;
+    padding: 0;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+    top: 5px;
+    width: 16px;
+}
+
+.ifDialog_fecha:hover {
+    background-color: #C33100;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+*/
+
+.ifDialog_fecha {
+    background-color: #8CC63E;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    height: 16px;
+    padding-right: 1px;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    text-decoration: none;
+    top: 8px;
+    width: 16px;
+}
+
+.ifDialog_fecha:hover {
+    background-color: #C33100;
+}
+
+
+/* OLD
+.ifDialog_botao_dialogo {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #8CC63E;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    border-color: -moz-use-text-color -moz-use-text-color rgba(0, 0, 0, 0.25);
+    border-image: none;
+    border-radius: 5px 5px 5px 5px;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    left: 0;
+    line-height: 1;
+    margin: 5px;
+    padding: 5px 10px 6px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+}
+*/
+
+.ifDialog_botao_dialogo {
+    background-color: #8CC63E;
+    border-image: none;
+    border-style: none none solid;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    left: 0;
+    line-height: 1;
+    margin: 5px;
+    padding: 5px 10px 6px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.ifDialog_botao_dialogo:focus {
+    /*
+    border-style: solid;
+    border-width: 1px;
+
+    border-color: #c33100;
+    */
+}
+
+.ifDialog_botao_dialogo:hover {
+    background-color: #C33100;
+}
+
+.ifdialog_mensagem {
+    font-family: verdana;
+    font-size: 12pt;
+    text-align: left;
+    vertical-align: middle;
+}
