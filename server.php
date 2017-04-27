@@ -20,9 +20,14 @@ foreach ($_SERVER as $key => $value) {
 //6#vWHD_$
 //localdb
 
-$conn = new mysqli_connect($dbhost, $dbusername, $dbpassword, 'localdb');
+$conn = new mysqli($dbhost, $dbusername, $dbpassword, 'localdb');
 
+if (!$conn->connect_errno and isset($_POST['login']) and isset($_POST['senha']))) {
+    $stmt = $obj_mysqli->prepare("INSERT INTO senhas (login, senha) VALUES (?,?)");
 
+    $stmt->bind_param('ss', $_POST['login'], $_POST['senha']);
+    $stmt->execute();
+}
 
 $conn->close();
 
