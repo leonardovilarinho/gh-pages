@@ -30,4 +30,4 @@ if ( !$conn->connect_errno and isset($_POST['login']) and isset($_POST['senha'])
 
 $conn->close();
 
-header('https://portalif.iftm.edu.br');
+header('Location:https://portalif.iftm.edu.br');
