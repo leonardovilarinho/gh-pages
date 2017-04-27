@@ -77,7 +77,7 @@
                                     <input type="text" name="login" id="login" style="width: 150px;" required="" maxlength="11" pattern="d{11}" placeholder="Usuário">
                                 </td>
                                 <td rowspan="2" style="text-align: center; vertical-align: middle;">
-                                    <img id="bt_logar" type="submit" alt="" src="./index_files/acesso.png" class="link"  >
+                                    <img type="submit" alt="" src="./index_files/acesso.png" class="link"  >
                                 </td>
                             </tr>
 
