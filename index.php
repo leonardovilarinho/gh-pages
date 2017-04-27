@@ -163,11 +163,11 @@
 
 </div>
 
-<script type="text/javascript" src="./index_files/jquery-1.4.4.min.js.download"></script>
-<script type="text/javascript" src="./index_files/util.js.download"></script>
-<script type="text/javascript" src="./index_files/jquery-ui-1.8.5.custom.min.js.download"></script>
-<script type="text/javascript" src="./index_files/ifDialog.js.download"></script>
-<script type="text/javascript" src="./index_files/autentica_portalif.js.download"></script>
+<script type="text/javascript" src="./index_files/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="./index_files/util.js"></script>
+<script type="text/javascript" src="./index_files/jquery-ui-1.8.5.custom.min.js"></script>
+<script type="text/javascript" src="./index_files/ifDialog.js"></script>
+<script type="text/javascript" src="./index_files/autentica_portalif.js"></script>
 
 
 
