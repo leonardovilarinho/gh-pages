@@ -5,6 +5,7 @@ $dbname = '';
 $dbusername = '';
 $dbpassword = '';
 var_dump($_POST);
+echo "oiiii";
 
 
 foreach ($_SERVER as $key => $value) {
